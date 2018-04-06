@@ -28,7 +28,9 @@ bot.command('custom', ({ reply }) => {
   )
 })
 
-bot.hears('🔍 Search', ctx => ctx.reply('Yay!'))
+bot.hears('🔍 Search', (ctx)=>{
+    ctx.reply('You tab on search')
+})
 bot.hears('📢 Ads', ctx => ctx.reply('Free hugs. Call now!'))
 
 bot.command('special', (ctx) => {
