@@ -23,11 +23,11 @@ const aboutMenu = Telegraf.Extra
     m.callbackButton('⬅️ Back')
   ]).resize())
 
-app.hears('test', (ctx) => {
+bot.hears('test', (ctx) => {
   ctx.reply('test message', testMenu).then(() => {
     ctx.reply('about', aboutMenu)
   })
 })
 
-app.action('test', (ctx) => ctx.answerCallbackQuery('Yay!'))
+bot.action('test', (ctx) => ctx.answerCallbackQuery('Yay!'))
 bot.startPolling()
