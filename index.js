@@ -11,4 +11,23 @@ bot.hears("get list",(ctx)=>{
     ctx.reply("list")
 
 })
+const testMenu = Telegraf.Extra
+  .markdown()
+  .markup((m) => m.inlineKeyboard([
+    m.callbackButton('Test button', 'test')
+  ]))
+
+const aboutMenu = Telegraf.Extra
+  .markdown()
+  .markup((m) => m.keyboard([
+    m.callbackButton('⬅️ Back')
+  ]).resize())
+
+app.hears('test', (ctx) => {
+  ctx.reply('test message', testMenu).then(() => {
+    ctx.reply('about', aboutMenu)
+  })
+})
+
+app.action('test', (ctx) => ctx.answerCallbackQuery('Yay!'))
 bot.startPolling()
