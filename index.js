@@ -7,5 +7,8 @@ bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
 bot.hears(/buy/i, (ctx) => ctx.reply('Buy-buy'))
+bot.hears("get list",(ctx)=>{
+    ctx.reply("list")
 
+})
 bot.startPolling()
