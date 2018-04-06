@@ -1,0 +1,26 @@
+{
+  "name": "budgeting",
+  "version": "1.0.0",
+  "description": "personal budgeting managment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/includeamin/budgeting.git"
+  },
+  "keywords": [
+    "includeamin",
+    "budgeting"
+  ],
+  "author": "includeamin (aminjamal)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/includeamin/budgeting/issues"
+  },
+  "homepage": "https://github.com/includeamin/budgeting#readme",
+  "dependencies": {
+    "telegraf": "^3.20.0"
+  }
+}
