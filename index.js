@@ -2,7 +2,7 @@ const Telegraf = require('telegraf')
 const Markup = require('telegraf/markup')
 
 const invoice = {
-  provider_token: process.env.PROVIDER_TOKEN,
+  provider_token: "577508932:AAEWz4n7dJzYJ9ooHCZarXmjWoeh9ONBp7c",
   start_parameter: 'time-machine-sku',
   title: 'Working Time Machine',
   description: 'Want to visit your great-great-great-grandparents? Make a fortune at the races? Shake hands with Hammurabi and take a stroll in the Hanging Gardens? Order our Working Time Machine today!',
