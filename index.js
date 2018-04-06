@@ -36,7 +36,7 @@ const replyOptions = Markup.inlineKeyboard([
   Markup.urlButton('❤️', 'http://telegraf.js.org')
 ]).extra()
 
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const bot = new Telegraf("577508932:AAEWz4n7dJzYJ9ooHCZarXmjWoeh9ONBp7c")
 bot.start(({ replyWithInvoice }) => replyWithInvoice(invoice))
 bot.command('/buy', ({ replyWithInvoice }) => replyWithInvoice(invoice, replyOptions))
 bot.on('shipping_query', ({ answerShippingQuery }) => answerShippingQuery(true, shippingOptions))
