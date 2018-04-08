@@ -18,9 +18,9 @@ bot.command('onetime', ({ reply }) =>
 bot.command('custom', ({ reply }) => {
   return reply('Custom buttons keyboard', Markup
     .keyboard([
-      ['🔍 Search', '🤑 Popular'], // Row1 with 2 buttons
-      ['☸ Setting', '📞 Feedback'], // Row2 with 2 buttons
-      ['📢 Ads', '⭐️ Rate us', '👥 Share'] // Row3 with 3 buttons
+      ['🔍 جست و جو', '➕ طلب'], // Row1 with 2 buttons
+      ['😔 بدهی کل', '🤑 طلب کل'], // Row2 with 2 buttons
+      ['📢 اشخاص', '➕ بدهی ', '👥 شمارکارت'] // Row3 with 3 buttons
     ])
     .oneTime()
     .resize()
@@ -29,6 +29,7 @@ bot.command('custom', ({ reply }) => {
 })
 
 bot.hears('🔍 Search', (ctx)=>{
+  
     ctx.reply('You tab on search')
 })
 bot.hears('📢 Ads', ctx => ctx.reply('Free hugs. Call now!'))
