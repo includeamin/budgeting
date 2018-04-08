@@ -14,7 +14,7 @@ bot.command('onetime', ({ reply }) =>
   )
 )
 
-bot.command('custom', ({ reply }) => {
+bot.start( ({ reply }) => {
   return reply('Custom buttons keyboard', Markup
     .keyboard([
       ['🔍 جست و جو', '➕ طلب'], // Row1 with 2 buttons
