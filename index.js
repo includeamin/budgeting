@@ -3,7 +3,7 @@ const Extra = require('telegraf/extra')
 const Markup = require('telegraf/markup')
 
 const bot = new Telegraf("577508932:AAEWz4n7dJzYJ9ooHCZarXmjWoeh9ONBp7c")
-
+bot.use(session())
 bot.use(Telegraf.log())
 
 bot.command('onetime', ({ reply }) =>
@@ -28,8 +28,8 @@ bot.command('custom', ({ reply }) => {
   )
 })
 
-bot.hears('🔍 Search', (ctx)=>{
-  
+bot.hears('➕ طلب', (ctx)=>{
+    ctx.reply('You tab on search')
     ctx.reply('You tab on search')
 })
 bot.hears('📢 Ads', ctx => ctx.reply('Free hugs. Call now!'))
