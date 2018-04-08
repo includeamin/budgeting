@@ -3,7 +3,6 @@ const Extra = require('telegraf/extra')
 const Markup = require('telegraf/markup')
 
 const bot = new Telegraf("577508932:AAEWz4n7dJzYJ9ooHCZarXmjWoeh9ONBp7c")
-bot.use(session())
 bot.use(Telegraf.log())
 
 bot.command('onetime', ({ reply }) =>
